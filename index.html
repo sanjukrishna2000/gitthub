@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>paliandrome</title>
+</head>
+<body>
+	<p id="aa"></p>
+	<script>
+		let a=prompt("enter a number");
+		let b=a;
+		var sum=0;
+		let d;
+
+		while(b>0){
+			d= b%10;
+			sum=(sum*10)+d;
+			b=parseInt(b/10);
+		}
+
+		if(sum==a){
+			document.getElementById("aa").innerHTML=a+" "+"is paliandrome";
+		}
+		else{
+			document.getElementById("aa").innerHTML=a+" "+"is not paliandrome"
+			}
+</script>
+</body>
+</html>
